@@ -2,7 +2,8 @@
 
 const input = document.querySelector("input");
 const output = document.querySelector("span");
-
+const field = document.querySelector("h1");
+field.setAttribute("class", "result");
 
     
 input.addEventListener("input", (event) => {

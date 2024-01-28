@@ -7,6 +7,8 @@ const divContainer = document.getElementById('boxes');
 
 createBtn.addEventListener('click', createBoxes);
 destroyBtn.addEventListener('click', destroyBoxes);
+createBtn.classList.add("create-btn")
+destroyBtn.classList.add("destroy-btn")
 
 function createBoxes() {
   if (input.value >= 1 && input.value <= 100) {

@@ -7,10 +7,13 @@ field.setAttribute("class", "result");
 
     
 input.addEventListener("input", (event) => {
-    if (event.currentTarget.value.trim()) {
-        output.textContent = event.currentTarget.value.trim();
-    } 
+    if (event.currentTarget.value.trim() === '') {
+            output.textContent = 'Anonymous';
+        } else {
+            output.textContent = event.currentTarget.value.trim();
+        }
 });
+
 
 
 

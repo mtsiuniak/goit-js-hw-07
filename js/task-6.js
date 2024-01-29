@@ -12,7 +12,7 @@ destroyBtn.classList.add("destroy-btn")
 
 function createBoxes() {
   if (input.value >= 1 && input.value <= 100) {
-    const amount = input.value;
+    const amount = Number(input.value);
     clearBoxes();
     
     for (let i = 0; i < amount; i++) {
